@@ -1,0 +1,23 @@
+<div>
+  <div class="fullscreen-bg">
+    <video loop muted autoplay class="fullscreen-bg__video">
+      <source src="./Photos/movie_final.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div ng-show="titleElements" class="titleDiv">
+    <div>
+      <p class="title">Double Spaced</p>
+    </div>
+    <div><button ng-click="startGame()" class="startButton">Start</button></div>
+  </div>
+  <!--<div>
+    <button ui-sref="users" class="leaderboard">See Leaderboard</button>
+  </div>-->
+  <div class="logIn" ng-show="logIn">
+    <input style="background-color: burlywood" placeholder="Enter name" class="userNameEntry" ng-model="userName" type="text">
+    <button class="btn btn-primary" id="sendName" ng-click="submitName()" ui-sref="game">Play!</button>
+  </div>
+  <div ng-show="adminLogIn">
+    <input placeholder="hellllo" type="password">
+  </div>
+</div>

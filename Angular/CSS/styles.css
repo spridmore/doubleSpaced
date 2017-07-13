@@ -1,0 +1,603 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /*font-family: indie flower;*/
+  font-family: 'Gloria Hallelujah';  
+}
+
+.inGameStats {
+  color: white;
+  font-size: 23px
+}
+
+.userNameEntry {
+  margin-top: 15%;
+  border-radius: 9px;
+  border: none;
+}
+.titleDiv {
+  margin-top: 12%;
+  font-size: 45px;
+}
+
+.btn-primary {
+  opacity: .8;
+  font-size: 24px;
+  margin-top: -9px;
+}
+
+.score {
+  margin-left: 50px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.gameBackground {
+  background-color: black;
+
+}
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('../img/videoframe.jpg') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
+
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
+
+.background {
+background-color: black;
+  }
+
+.planetRow {
+  /*padding-top: 12px;*/
+  height: 500px;
+  margin-top: 60px;
+  padding: 12px, 15px, 15px, 12px;
+  background-color: rgba(140, 140, 140, .8);
+  animation-name: background-fade-in;
+  animation-duration: 6s;
+  width: 64%;
+  margin: auto;
+  border-radius: 20px;
+}
+
+@keyframes background-fade-in {
+  0% {
+    background-color: rgba(140, 140, 140, 0);
+  }
+  70% {
+    background-color: rgba(140, 140, 140, 0);
+  }
+  90% {
+   background-color: rgba(140, 140, 140, .9);
+  }
+}
+/*.planet {
+    padding: 12px, 15px, 15px, 12px;
+  background-color: rgba(0, 0, 0, .4);
+}*/
+.questionNumber {
+  opacity: 0;
+  color: white;
+  text-align: center;
+  font-size: 0;
+  animation-delay: 2.3s;
+  animation-name: float-question;
+  animation-duration: 1s;
+      margin-top: 55px;
+}
+
+@keyframes float-question {
+  0% {
+    opacity: 0;
+    font-size: 75px;
+    transform: translate3d(0px, 400px, 0px);    
+  }
+
+  50% {
+    transform: translate3d(0px, 400px, 0px);
+    font-size: 75px;
+    opacity: .9;
+  }
+}
+
+.spacePic {
+  opacity: 1;
+  margin-top: 38px;
+  transform: none;
+  border: none; 
+  height: 420px !important;
+  width: 500px !important;
+  animation-name: animatePics !important;
+  animation-duration: 26s;
+  border-radius: 1%;
+}
+
+.clearPic {
+  height: 0px;
+  width: 0px;
+}
+
+.clearText {
+  font-size: 0px;
+  color: white;
+}
+
+.picOne {
+  margin-left: -39px;
+}
+
+.picTwo {
+  margin-left: -71px;
+}
+
+@keyframes animatePics{
+  0% {
+   opacity: .001;
+ }
+ 16%{
+   transform: translate3d(0px, 0px, 0px);
+   opacity: 0;
+   font-size: 0px;
+ }
+ 18% {
+   transform: translate3d(0px, 50px, 0px);
+   font-size: 40px;
+   opacity: 1;
+  }
+  21% {
+    transform: translate3d(0px, 0px, 0px);
+    font-size: 25px;
+  }
+}
+
+.question {
+  text-align: center;
+  font-size: 35px !important;
+  animation-name: moveQuestion;
+  animation-duration: 6s;
+  color: white !important;
+}
+
+.questionParagraph {
+    font-family: "Fredoka One"
+}
+
+@keyframes moveQuestion{
+ 0% {
+   opacity: 0;
+ }
+ 60%{
+   transform: translate3d(0px, 0px, 0px);
+   opacity: 0;
+   font-size: 0px;
+ }
+ 70% {
+   transform: translate3d(0px, 50px, 0px);
+   font-size: 30px;
+   opacity: 1;
+  }
+  80% {
+    transform: translate3d(0px, 0px, 0px);
+    font-size: 28px;
+  }
+
+}
+
+.title{
+  margin-left: 35%;
+  font-family: 'VT323';
+  color: white;
+  /*animation-delay: 16s;*/
+  animation-name: title-move;
+  animation-duration: 52s;
+  font-size: 65px;
+}
+
+@keyframes title-move{
+  0% {
+   opacity: 0; 
+  }
+  15% {
+   opacity:0;
+   transform: translate3d(0px, 0px, 0px);    
+  }
+  19%{
+   opacity: .5; 
+   transform: translate3d(1200px, 70px, 0px);
+   /*transform: rotate(160deg)*/
+  }
+  28% {
+   transform: translate3d(0px, 70px, 0px); 
+   color: darkred; 
+  }
+  33% {
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+    color: white;
+  }
+  100% {
+
+  }
+}
+.logIn{
+  text-align: center;
+  font-size: 32px;
+}
+
+.startButton {
+    margin-left: 56%;
+    color: darkred;
+    /* animation-delay: 8s; */
+    animation-name: btn-move;
+    animation-duration: 52s;
+    margin-top: -5%;
+    float: left;
+    background: none;
+    border: none;    
+    font-size: 55px;  
+}
+
+@keyframes btn-move {
+  0% {
+   opacity: 0; 
+   border: none;   
+  }
+  12% {
+   opacity: 0;
+   transform: translate3d(0px, 0px, 0px);
+  }
+  19%{
+   opacity: .5; 
+   transform: translate3d(-1200px, -40px, 0px);
+   /*transform: rotate(160deg)*/
+  }
+  28% {
+   transform: translate3d(0px, -40px, 0px); 
+   color: white; 
+   
+  }
+  33% {
+   opacity: 1;    
+   transform: translate3d(0px, 0px, 0px);
+   border: none;
+   color: darkred;    
+  }
+}
+
+.userNavigation {
+  text-align: center;
+  animation: slide-in-user;
+  animation-duration: 2s;
+  font-size: 25px;
+  border: 9px white solid;
+  width: 10%;
+  margin: auto;
+  color: white;
+  margin-top: 19px;
+}
+
+.userNavigation > a {
+  color: cornflowerblue; 
+}
+
+@keyframes slide-in-user {
+  0% {
+    transform: translate3d(-900px, 20px, 0px);
+    margin-top: -58px;;    
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+.titleLine {
+  color: white;
+  animation-name: line-appear;
+  animation-delay: 18s;
+}
+
+.endElements {
+  text-align: center;
+  margin-top: 180px;
+}
+
+h1 {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+th {
+  width: 150px;
+  text-align: center;
+  font-family: "VT323"
+}
+
+table {
+  margin: auto;
+  margin-top: 80px;
+  width: 50%;
+  height: 200px;
+  text-align: center;
+  font-size: 35px;
+  animation-name: score-scroll;
+  animation-duration: 2s;
+  background-color: rgba(0, 0, 0, .8);
+  color: white;
+  border: 10px white solid;
+}
+
+@keyframes score-scroll{
+  0%{
+   transform: translate3d(0px, 800px, 0px);
+  }
+}
+
+/*#userBackground {
+  background-color: rgba(0, 0, 0, 1);
+}*/
+
+.wrongAnswer {
+  animation-name: show-wrong-response-text;
+    animation-delay: .5s;
+    animation-duration: 1.7s;
+    opacity: 0;
+    font-size: 0;
+    clear: both;
+    text-align: center;
+    font-size: 35px;
+}
+
+.rightAnswer {
+  animation-name: show-wrong-response-text;
+    animation-delay: .5s;
+    animation-duration: 1.7s;
+    opacity: 0;
+    font-size: 0;
+    clear: both;
+    text-align: center;
+    font-size: 35px;
+}
+
+.endElementsDiv {
+  margin-top: 250px;
+}
+
+.endElements {
+  color: lightgreen;
+  margin-top: 0px;
+  font-size: 50px;
+  animation: slide-in;
+  animation-duration: 3s;
+}
+
+@keyframes slide-in {
+  0% {
+    /*transform: translate3d(-900px, 20px, 0px);*/
+    margin-top: -52px;;    
+  }
+  100% {
+    /*transform: translate3d(0px, 0px, 0px);*/
+    margin-top: 0px;
+  }
+}
+.dongleMan {
+  margin-top: 205px;
+  animation-name: show-wrong-response;
+  animation-duration: 5s;
+  clear: both;
+  text-align: center;
+  font-size: 35px;
+  height: 220px !important;
+  width: 300px !important;
+}
+
+.dongleText {
+  opacity: 0;
+  color: whitesmoke;
+  font-size: 45px;
+  animation-name: dongle-reveal;
+  animation-duration: 6s
+}
+
+@keyframes dongle-reveal {
+  0% {
+    opacity: .01;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show-wrong-response {
+
+  0% {
+    transform: translate3d(0px, -500px, 0px);    
+    opacity: .001;
+  }
+  4% {
+    opacity: .001;    
+  }
+  5% {
+    font-size: 36px;
+    /*transform: translate3d(0px, 00px, 0px);    */
+    opacity: 1
+  }
+  100% {
+    font-size: 36px;    
+    transform: translate3d(0px, -450px, 0px);
+    opacity: 1
+  }
+}
+  @keyframes show-wrong-response-text {
+
+  0% {
+    transform: translate3d(0px, -500px, 0px);    
+    opacity: .001;
+  }
+  4% {
+    opacity: .001;    
+  }
+  5% {
+    font-size: 36px;
+    /*transform: translate3d(0px, 00px, 0px);    */
+    opacity: 1
+  }
+  100% {
+    font-size: 36px;    
+    transform: translate3d(0px, -450px, 0px);
+    opacity: 1
+  }
+}
+
+/*header {
+    background-color:rgba(33, 33, 33, 0.9);
+    color:#ffffff ;
+    display:block;
+    font: 14px/1.3 Arial,sans-serif;
+    height:50px;
+    position:relative;
+    z-index:5;
+}*/
+/*h2{
+    margin-top: 30px;
+    text-align: center;
+}
+header h2{
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 80%;
+    text-align: center;
+}
+header a, a:visited {
+    text-decoration:none;
+    color:#fcfcfc ;
+}*/
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:-3;
+}
+
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png)  repeat top center;
+  z-index:-3;
+/*
+ -moz-animation:move-twink-back 1200s linear infinite;
+  -ms-animation:move-twink-back 1200s linear infinite;
+  -o-animation:move-twink-back 1200s linear infinite;
+  -webkit-animation:move-twink-back 1200s linear infinite;
+  animation:move-twink-back 1200s linear infinite;*/
+}
+
+.clouds{
+    background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png)
+
+ repeat top center;
+    z-index:-2;
+/*
+ -moz-animation:move-clouds-back 1500s linear infinite;
+  -ms-animation:move-clouds-back 1500s linear infinite;
+  -o-animation:move-clouds-back 1500s linear infinite;
+  -webkit-animation:move-clouds-back 1500s linear infinite;
+  animation:move-clouds-back 1500s linear infinite;*/
+}
+
+#adminHeader {
+  text-align: center;
+}
+
+.uploadDiv {
+  text-align: center;
+  margin: 10px;
+}
