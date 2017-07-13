@@ -1,6 +1,6 @@
 # Description
 
-This quiz application was developed atop Agile’s iterative methodology and was completed in three one-week sprints. The quiz makes use of C# classes to store and access player data in addition to an Angular UI to access NASA’s API. An administrative page allows uploading of quiz data and photos.
+This quiz application was developed atop Agile’s iterative methodology and was completed in three one-week sprints. The quiz makes use of C# classes to store and access player data in addition to an Angular router that creates a seemless experience for the user. An administrative page allows uploading of quiz data and photos.
 
 ## Technologies
 ____
@@ -11,7 +11,7 @@ C# | .NET | ASP.NET | AngularJS | jQuery | Bootstrap | HTML5 | CSS | LINQ | Enti
 
 ## Planning and Approach
 ___
-One full day of wire-framing and user story writing were followed by two one-week sprints. Daily scrum planning outlined daily procedures by verbalizing what was accomplished the prior day, what the goal of the current day, and what types of obstacles were foreseen in the way of sprint execution.
+One full day of wire-framing and user story writing were followed by three one-week sprints. Daily scrum planning outlined daily procedures by verbalizing what was accomplished the prior day, what the goal of the current day, and what types of obstacles were foreseen in the way of sprint execution.
 <br>
 
 
