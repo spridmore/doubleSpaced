@@ -1,8 +1,0 @@
-/Users/hspain/Desktop/third_phase_app/bin/Debug/netcoreapp1.1/third_phase_app.deps.json
-/Users/hspain/Desktop/third_phase_app/bin/Debug/netcoreapp1.1/third_phase_app.runtimeconfig.json
-/Users/hspain/Desktop/third_phase_app/bin/Debug/netcoreapp1.1/third_phase_app.runtimeconfig.dev.json
-/Users/hspain/Desktop/third_phase_app/bin/Debug/netcoreapp1.1/third_phase_app.dll
-/Users/hspain/Desktop/third_phase_app/bin/Debug/netcoreapp1.1/third_phase_app.pdb
-/Users/hspain/Desktop/third_phase_app/obj/Debug/netcoreapp1.1/third_phase_app.AssemblyInfo.cs
-/Users/hspain/Desktop/third_phase_app/obj/Debug/netcoreapp1.1/third_phase_app.dll
-/Users/hspain/Desktop/third_phase_app/obj/Debug/netcoreapp1.1/third_phase_app.pdb
