@@ -2,10 +2,7 @@ angular
   .module("spaceApp")
   .controller("adminController", function($scope, adminService){
 
-
     $scope.upload = [];
-    // $scope.uploadOne = "";
-    // $scope.uploadTwo = "";
 
     var Photo = function(imageLocation, type, question){
       // this.id = id,
@@ -15,20 +12,16 @@ angular
     }
 
     $scope.uploadPhotos = function() {
-      console.log($scope.test)
-      if(document.getElementById('radioOne').checked) {
-        console.log($scope.uploadOne)
+      if (document.getElementById('radioOne').checked) {
        $scope.upload.push(new Photo($scope.uploadOne, "Real",  $scope.uploadQuestion))
       }
-      else{
-        console.log($scope.uploadOne)
-        
+      else { 
         $scope.upload.push(new Photo($scope.uploadOne, "Fake",  $scope.uploadQuestion))      
       }
-      if(document.getElementById('radioTwo').checked){
+      if (document.getElementById('radioTwo').checked){
       $scope.upload.push(new Photo($scope.uploadTwo, "Real",  $scope.uploadQuestion))
       }
-      else{
+      else {
         $scope.upload.push(new Photo($scope.uploadTwo, "Fake",  $scope.uploadQuestion))      
       }
       adminService.uploadNew($scope.upload)

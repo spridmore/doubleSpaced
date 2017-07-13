@@ -30,7 +30,6 @@ namespace third_phase_app
         {
             services.AddDbContext<UserContext>(opt => opt.UseInMemoryDatabase());
             services.AddCors();
-                // Add framework services.
             services.AddMvc();
         }
 

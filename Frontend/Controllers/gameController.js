@@ -45,7 +45,7 @@ angular
       $scope.photos.push(new Photo(11, $scope.newEntry[1].imageLocation, $scope.newEntry[1].type, $scope.newEntry[1].question))
     }
 
-    // Initializing game 
+    // initializing game 
     var g = randomInt();
     $scope.planetOne = $scope.photos[g];
     $scope.photos.splice(g, 1);

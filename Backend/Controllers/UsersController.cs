@@ -13,8 +13,8 @@ namespace third_phase_app.Controllers
         public int UserScore { get; set;}
         public string Name { get; set;}
         public int Id { get; set;}
-        
     }
+    
     [Route("api/[controller]")]
     public class UserController : Controller
     {
@@ -41,37 +41,12 @@ namespace third_phase_app.Controllers
           return _context.UserStats;
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public User Get(int id)
-        {
-          // foreach(User x in _context.Users){
-          //   if (x.Id == id){
-          //     return x;
-          //   }
-          // }
-            return null;
-        }
-
         // POST api/values
         [HttpPost]
         public void Post([FromBody]User value)
         {
           _context.Add(value);
           _context.SaveChanges();
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]User value)
-        {
-     
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
         }
     }
 }
